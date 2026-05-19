@@ -1,0 +1,112 @@
+{
+  "overall_status": "PASS_WITH_WARNINGS",
+  "standard_part_assumptions": {
+    "main_shaft_radius_mm": 4.0,
+    "m3_shank_radius_mm": 1.5,
+    "m3_head_radius_mm": 2.6,
+    "m3_head_height_mm": 2.0,
+    "shoulder_clamp_head_radius_mm": 3.0,
+    "servo_reference_plate_xyz_mm": [
+      22.0,
+      22.0,
+      8.0
+    ]
+  },
+  "checks": [
+    {
+      "name": "主关节 D8 轴/轴套径向余量",
+      "requirement": "孔半径 4.20 mm，应大于标准件半径 4.00 mm",
+      "measured": "0.200 mm",
+      "value": 0.20000000000000018,
+      "status": "PASS",
+      "note": "用于判断 shoulder/elbow 主轴是否能装入。0.20 mm 对 3D 打印属于可用但偏紧的余量。"
+    },
+    {
+      "name": "肘部 M3 螺钉通孔径向余量",
+      "requirement": "孔半径 1.60 mm，应大于 M3 螺钉半径 1.50 mm",
+      "measured": "0.100 mm",
+      "value": 0.10000000000000009,
+      "status": "WARN",
+      "note": "功能上可装入，但 0.10 mm 对 FDM 打印偏紧，建议 V3 放宽到半径 1.70-1.80 mm。"
+    },
+    {
+      "name": "肘部 M3 螺钉头沉孔径向余量",
+      "requirement": "沉孔半径 2.70 mm，应大于头部半径 2.60 mm",
+      "measured": "0.100 mm",
+      "value": 0.10000000000000009,
+      "status": "WARN",
+      "note": "螺钉头可进入沉孔，但径向余量偏紧。"
+    },
+    {
+      "name": "肘部 M3 螺钉头沉孔深度余量",
+      "requirement": "沉孔深度 2.20 mm，应大于头部高度 2.00 mm",
+      "measured": "0.200 mm",
+      "value": 0.20000000000000018,
+      "status": "PASS",
+      "note": "沉孔深度可容纳简化螺钉头。"
+    },
+    {
+      "name": "肘部安装孔到 pad 边缘最小材料",
+      "requirement": "建议 >= 2.0 mm",
+      "measured": "通孔边缘 7.450 mm，沉孔边缘 6.350 mm",
+      "value": 6.349999999999997,
+      "status": "PASS",
+      "note": "边缘余量充足。"
+    },
+    {
+      "name": "肘部 2x2 孔间最小材料",
+      "requirement": "建议通孔/沉孔之间保留 >= 2.0 mm",
+      "measured": "通孔间 6.700 mm，沉孔间 4.500 mm",
+      "value": 4.5,
+      "status": "PASS",
+      "note": "2x2 孔系自身材料余量可接受。"
+    },
+    {
+      "name": "肘部安装孔与 elbow 主孔最小孔间材料",
+      "requirement": "建议 >= 0.8 mm",
+      "measured": "0.250 mm",
+      "value": 0.2499999999999969,
+      "status": "WARN",
+      "note": "这是当前最需要关注的风险：最近的 M3 通孔离 elbow 主孔较近，真实打印和受力下建议 V3 把孔系向近端移动 1-2 mm 或增大局部材料。"
+    },
+    {
+      "name": "肩部 M3 夹紧/定位孔径向余量",
+      "requirement": "孔半径 2.00 mm，应大于 M3 螺钉半径 1.50 mm",
+      "measured": "0.500 mm",
+      "value": 0.5,
+      "status": "PASS",
+      "note": "肩部侧向孔给 M3 螺钉留有较宽松余量。"
+    },
+    {
+      "name": "肩部夹紧孔到 pad 边缘最小材料",
+      "requirement": "建议 >= 2.0 mm",
+      "measured": "2.500 mm",
+      "value": 2.5,
+      "status": "PASS",
+      "note": "边缘材料余量可接受，但已接近小型打印件下限。"
+    },
+    {
+      "name": "肩部夹紧孔与 shoulder 主孔最小孔间材料",
+      "requirement": "建议 >= 2.0 mm",
+      "measured": "7.000 mm",
+      "value": 7.000378782444084,
+      "status": "PASS",
+      "note": "肩部夹紧孔与主孔之间有较充足材料。"
+    },
+    {
+      "name": "简化舵机/连接板 footprint 是否落在 elbow pad 内",
+      "requirement": "参考板投影应在 pad 内",
+      "measured": "最小边缘余量 3.000 mm",
+      "value": 3.0,
+      "status": "PASS",
+      "note": "用于检查简化 mating plate 不会明显悬空。"
+    }
+  ],
+  "outputs": {
+    "assembly_step": "<repo>/05_improved_design/upper_arm_v2/assembly_check/upper_arm_v2_simplified_standard_parts_assembly.step",
+    "assembly_stl": "<repo>/05_improved_design/upper_arm_v2/assembly_check/upper_arm_v2_simplified_standard_parts_assembly.stl",
+    "checks_csv": "<repo>/05_improved_design/upper_arm_v2/assembly_check/upper_arm_v2_standard_part_checks.csv",
+    "report": "<repo>/05_improved_design/upper_arm_v2/assembly_check/upper_arm_v2_standard_part_check_report_zh.md",
+    "plot": ""
+  }
+}

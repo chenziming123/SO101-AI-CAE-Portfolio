@@ -1,8 +1,8 @@
 {
   "project": "SO101-AI-CAE-Portfolio",
   "generated_from": "<repo>",
-  "file_count": 146,
-  "note": "Public portfolio package. Resume, credentials and temporary files are excluded.",
+  "file_count": 211,
+  "note": "Public project package. Personal data, credentials and temporary files are excluded.",
   "top_level": [
     "README.md",
     "docs",
@@ -10,6 +10,7 @@
     "models",
     "data",
     "src",
-    "tools"
+    "tools",
+    "projects"
   ]
 }

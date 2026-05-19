@@ -113,10 +113,8 @@
 2. 对 `SO-ARM100`、`LeRobot`、`so101-ros-physical-ai`、`onshape-to-robot`、`Gmsh/CalculiX` 做可运行性检查。
 3. 决定后续主线：先复现 ROS2/MoveIt/Rerun 可视化栈，再把 V3/V4 改进件接进去；FEA 同时从自建 solver 升级到 CalculiX/FreeCAD FEM。
 
-## 面试讲述方式
+## 工程流程说明
 
-可以这样讲：
+本项目选择 SO-101 开源机械臂作为 baseline。第一阶段复现其 CAD、URDF 和仿真资源；第二阶段用 AI 辅助对 upper arm 做参数化重建和结构轻量化；第三阶段发现轻量化带来装配孔余量和刚度问题，于是用 CAD 特征校核、标准件检查和有限元结果迭代到 V3；下一阶段计划升级为开源栈整合，接入 ROS2/MoveIt/Rerun 和 CalculiX/FreeCAD FEM，使结构改进能在更完整的机器人仿真和 CAE 流程中验证。
 
-> 我不是从零造一个没有来源的机械臂，而是选择了 SO-101 这个开源机械臂作为 baseline。第一阶段我复现了它的 CAD、URDF 和仿真资源；第二阶段我用 AI 辅助对 upper arm 做参数化重建和结构轻量化；第三阶段我发现轻量化带来装配孔余量和刚度问题，于是用 CAD 特征校核、标准件检查和有限元结果迭代到 V3；下一阶段我把项目升级为开源栈整合，接入 ROS2/MoveIt/Rerun 和 CalculiX/FreeCAD FEM，使结构改进能在更完整的机器人仿真和 CAE 流程中验证。
-
-这比单纯说“我用 AI 画了一个机械臂”更有说服力，因为它体现的是开源工程复现、工具链整合、结构优化和验证闭环。
+这一路线强调开源工程复现、工具链整合、结构优化和验证闭环，而不是停留在“用 AI 生成外观模型”。

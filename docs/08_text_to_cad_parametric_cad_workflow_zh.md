@@ -4,9 +4,9 @@
 
 本项目用于说明：AI 不是只生成一张机械臂外观图，而是参与“结构需求拆解、参数化建模、STEP/STL 导出、CAD 特征校核、装配检查、URDF 回归和 FEA 验证”的完整工程流程。
 
-在简历中对应项目名称为：
+该模块的完整资料包位于：
 
-> Text-to-CAD机械结构参数化建模与工程校核流程
+- `projects/text_to_cad_parametric_cad/`
 
 ## 为什么做这一步
 
@@ -135,6 +135,6 @@ CAD 脚本：
 - `figures/cad/upper_arm_v1_v2_v3_three_views.png`
 - `figures/cad/upper_arm_v2_v3_elbow_hole_zoom.png`
 
-## 简历中可以这样讲
+## 工程说明
 
-我做的 Text-to-CAD 项目不是简单让 AI 画机械臂，而是把自然语言结构需求转成参数化 CAD 脚本，再导出 STEP/STL，并通过 STEP B-Rep 特征校核、标准件装配检查、URDF/PyBullet 回归和 FEA 验证结果。这个流程能证明 AI 生成的结构不是停留在外观层面，而是可以进入机械工程验证链路。
+Text-to-CAD 在本项目中的定位不是直接输出最终零件，而是将自然语言结构需求转化为参数化 CAD 脚本，再通过 STEP/STL 导出、STEP B-Rep 特征校核、标准件装配检查、URDF/PyBullet 回归和 FEA 验证结果约束设计。该流程将 AI 生成结果纳入机械工程验证链路，避免模型只停留在外观层面。

@@ -500,7 +500,7 @@ def make_workflow_diagram() -> Path:
             arrow(draw, prev, (x - 12, y + box_h // 2), COLORS["line"])
         x += box_w + gap
     note = (
-        "面试讲述重点：我先复现官方开源机械臂，再用 AI 辅助进行结构重建和改进；每一版都要经过 CAD 校核、"
+        "工程验证重点：先复现官方开源机械臂，再用 AI 辅助进行结构重建和改进；每一版都要经过 CAD 校核、"
         "URDF/PyBullet 回归、Gmsh 网格、CalculiX 求解和结果对比，最后用结果反推下一版结构。"
     )
     draw_wrapped(draw, note, (100, h - 210), w - 200, FONT_BODY, COLORS["ink"], 10)
@@ -517,7 +517,7 @@ def write_report(figs: dict[str, Path]) -> Path:
 
 ## 这一步在做什么
 
-本步骤把前面已经完成的 CAD 建模、机器人仿真、工作空间分析、静载力矩分析、FEA 前处理、CalculiX 求解和结果云图整理成一组可直接用于作品集和面试讲述的图片。
+本步骤把前面已经完成的 CAD 建模、机器人仿真、工作空间分析、静载力矩分析、FEA 前处理、CalculiX 求解和结果云图整理成一组工程说明图片。
 
 目标不是新增一个单独数值，而是增强项目说服力：让别人一眼看到“模型从哪里来、怎么改、怎么接回仿真、有限元怎么建模、结果如何指导下一轮设计”。
 
@@ -553,11 +553,9 @@ def write_report(figs: dict[str, Path]) -> Path:
 
 用途：说明项目不是孤立脚本，而是开源 CAD/URDF/PyBullet/Gmsh/CalculiX 的组合工程流程。
 
-## 面试讲述方式
+## 工程流程说明
 
-可以这样讲：
-
-> 我先复现了官方 SO-101 的 URDF 和 PyBullet 仿真，确认关节链和末端运动正常；然后用工作空间和静载力矩分析定位结构瓶颈，确定 upper_arm 是第一轮改进对象。之后我用 AI 辅助做参数化 CAD 重建，经历 V1、V2、V3 三轮迭代，并把改进件接回 URDF 做运动学回归。最后我把 official 和 full V3 的 STEP 几何转成 Gmsh 四面体网格，再导出 CalculiX 输入文件做静力有限元，得到应力和位移对比。结果显示 V3 质量降低，但刚度下降，所以下一版 V4 的目标不是继续减重，而是加强中部梁、上下梁连接和肋板布局。
+流程先复现官方 SO-101 的 URDF 和 PyBullet 仿真，确认关节链和末端运动正常；然后用工作空间和静载力矩分析定位结构瓶颈，确定 upper_arm 是第一轮改进对象。之后使用 AI 辅助参数化 CAD 重建，经历 V1、V2、V3 三轮迭代，并把改进件接回 URDF 做运动学回归。最后将 official 和 full V3 的 STEP 几何转成 Gmsh 四面体网格，再导出 CalculiX 输入文件做静力有限元，得到应力和位移对比。结果显示 V3 质量降低，但刚度下降，所以下一版 V4 的目标不是继续减重，而是加强中部梁、上下梁连接和肋板布局。
 
 ## 当前边界
 

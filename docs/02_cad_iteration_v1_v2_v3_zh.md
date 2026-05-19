@@ -67,7 +67,7 @@ Step 17 把 upper arm 这条线从 baseline、工作空间、静载力矩、CAD 
 - V2/V3 肘部孔系局部差异图：`<repo>/06_portfolio_summary/model_visuals/upper_arm_v2_v3_elbow_hole_zoom.png`
 - 图片说明页：`<repo>/06_portfolio_summary/model_visuals/upper_arm_model_visual_comparison_zh.md`
 
-这些图的作用是把“参数、孔位和力矩结果”转成直观可看的模型差异，方便后续面试或作品集展示时说明：V1 先做轻量化，V2 补装配接口，V3 针对肘部孔系装配余量做修正。
+这些图的作用是把“参数、孔位和力矩结果”转成直观可看的模型差异，说明 V1 先做轻量化，V2 补装配接口，V3 针对肘部孔系装配余量做修正。
 
 ## 有限元初步验证
 
@@ -109,4 +109,4 @@ Step 21 建议先在 full V3 clean mesh 上重跑接口边界 FEA，再基于完
 - 接口边界 FEA 报告：`<repo>/07_fea_analysis/upper_arm_static_fea/results_interface_boundary/upper_arm_interface_fea_report_zh.md`
 - full V3 clean FEA 报告：`<repo>/07_fea_analysis/upper_arm_static_fea/results_full_v3_clean/upper_arm_full_v3_clean_fea_report_zh.md`
 - 总对比报告：`<repo>/06_portfolio_summary/upper_arm_v1_v2_v3_total_comparison_zh.md`
-- 面试讲述稿：`<repo>/06_portfolio_summary/upper_arm_v1_v2_v3_interview_talking_points_zh.md`
+- upper arm 项目说明：`docs/upper_arm_v1_v2_v3_project_notes_zh.md`

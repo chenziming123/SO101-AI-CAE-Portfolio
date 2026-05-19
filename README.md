@@ -36,12 +36,13 @@ full V3 clean FEA screening 结果：
 ## 仓库结构
 
 ```text
-docs/      中文项目报告、流程说明、FEA 结论、面试讲述稿
+docs/      中文项目报告、流程说明、FEA 结论、工程说明
 figures/   建模、仿真、FEA 和数据图
 models/    V1/V2/V3 STEP/STL、装配检查模型、FEA clean STEP
 data/      CSV/JSON 指标、孔位检查、力矩对比、FEA 结果
 src/       CAD 生成、结构分析、URDF smoke test、FEA 脚本
 tools/     项目辅助脚本
+projects/  可独立查看的工程模块资料包
 ```
 
 ## 推荐阅读顺序
@@ -50,14 +51,15 @@ tools/     项目辅助脚本
 2. [`docs/02_cad_iteration_v1_v2_v3_zh.md`](docs/02_cad_iteration_v1_v2_v3_zh.md)
 3. [`docs/03_fea_full_v3_clean_zh.md`](docs/03_fea_full_v3_clean_zh.md)
 4. [`docs/04_text_to_cad_open_source_workflow_zh.md`](docs/04_text_to_cad_open_source_workflow_zh.md)
-5. [`docs/08_text_to_cad_parametric_cad_workflow_zh.md`](docs/08_text_to_cad_parametric_cad_workflow_zh.md)
-6. [`docs/05_interview_talking_points_zh.md`](docs/05_interview_talking_points_zh.md)
+5. [`projects/text_to_cad_parametric_cad/README_zh.md`](projects/text_to_cad_parametric_cad/README_zh.md)
+6. [`docs/08_text_to_cad_parametric_cad_workflow_zh.md`](docs/08_text_to_cad_parametric_cad_workflow_zh.md)
+7. [`docs/05_project_explanation_zh.md`](docs/05_project_explanation_zh.md)
 
-## 两个简历项目对应关系
+## 工程模块与证据目录
 
-| 简历项目名称 | GitHub 对应内容 |
+| 工程模块 | GitHub 对应内容 |
 |---|---|
-| Text-to-CAD机械结构参数化建模与工程校核流程 | [`docs/08_text_to_cad_parametric_cad_workflow_zh.md`](docs/08_text_to_cad_parametric_cad_workflow_zh.md)、`src/cad/`、`models/upper_arm_v1-v3/`、`data/cad/` |
+| Text-to-CAD机械结构参数化建模与工程校核流程 | [`projects/text_to_cad_parametric_cad/README_zh.md`](projects/text_to_cad_parametric_cad/README_zh.md)、[`docs/08_text_to_cad_parametric_cad_workflow_zh.md`](docs/08_text_to_cad_parametric_cad_workflow_zh.md) |
 | SO-101机械臂结构仿真、装配验证与有限元分析 | [`docs/02_cad_iteration_v1_v2_v3_zh.md`](docs/02_cad_iteration_v1_v2_v3_zh.md)、[`docs/03_fea_full_v3_clean_zh.md`](docs/03_fea_full_v3_clean_zh.md)、`figures/fea/`、`data/fea/` |
 
 ## 关键图片
