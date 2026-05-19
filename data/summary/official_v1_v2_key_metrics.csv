@@ -1,0 +1,4 @@
+version,cad_step,cad_stl,volume_mm3,pla_mass_g,urdf_screening_mass_kg,volume_delta_vs_official_pct,mounting_check,urdf_smoke_max_ee_diff_m,shoulder_lift_p95_nm_at_100g,shoulder_lift_delta_vs_official_pct,role
+official,00_source_snapshot/STEP_SO101/Upper_arm_SO101.step,00_source_snapshot/STL_SO101/Individual/Upper_arm_SO101.stl,117328.19197700791,145.4869580514898,0.103,0.0,官方开源基准件,0.0,1.1440033778551921,0.0,baseline
+v1,05_improved_design/upper_arm_v1/upper_arm_v1_ai_rebuild.step,05_improved_design/upper_arm_v1/upper_arm_v1_ai_rebuild.stl,93885.7052067053,116.41827445631458,0.08242032433420315,-19.98026763669596,PASS,0.0,1.126774103222354,-1.5060510280258121,轻量化概念版
+v2,05_improved_design/upper_arm_v2/upper_arm_v2_ai_rebuild.step,05_improved_design/upper_arm_v2/upper_arm_v2_ai_rebuild.stl,98626.09967715891,122.29636359967705,0.0865818188755356,-15.93998167423728,PASS,0.0,1.1302622345304734,-1.2011453454342957,装配接口增强版

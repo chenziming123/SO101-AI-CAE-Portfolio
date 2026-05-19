@@ -1,0 +1,26 @@
+{
+  "units": "mm",
+  "span_shoulder_to_elbow_mm": 116.0,
+  "shoulder_boss_radius_mm": 18.0,
+  "elbow_boss_radius_mm": 16.5,
+  "joint_bore_radius_mm": 4.2,
+  "boss_width_mm": 34.0,
+  "rail_length_mm": 98.0,
+  "rail_width_y_mm": 15.0,
+  "rail_thickness_z_mm": 4.8,
+  "rail_offset_z_mm": 13.5,
+  "web_length_mm": 88.0,
+  "web_thickness_y_mm": 2.8,
+  "web_height_z_mm": 26.0,
+  "rib_x_positions_mm": [
+    26.0,
+    58.0,
+    90.0
+  ],
+  "lightening_hole_x_positions_mm": [
+    38.0,
+    58.0,
+    78.0
+  ],
+  "design_intent": "first AI-assisted parametric upper_arm_link concept; preserve shoulder/elbow joint span and add ribs, cable channel, and lightening holes"
+}

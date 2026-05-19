@@ -1,0 +1,62 @@
+{
+  "material": {
+    "name": "PLA screening",
+    "young_mpa": 2500.0,
+    "poisson": 0.35,
+    "yield_mpa": 50.0,
+    "density_g_per_cm3": 1.24
+  },
+  "loadcase": {
+    "total_force_n": 10.0,
+    "direction": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "fixed_x_fraction": 0.12,
+    "loaded_x_fraction": 0.1,
+    "mesh_size_mm": 7.0
+  },
+  "results": [
+    {
+      "name": "official",
+      "source": "<repo>/00_source_snapshot/STEP_SO101/Upper_arm_SO101.step",
+      "geometry_type": "step",
+      "scale_to_mm": 1.0,
+      "node_count": 2845,
+      "tet_count": 8943,
+      "span_axis": "x",
+      "bbox_extent_mm": "142.170,24.500,67.300",
+      "mesh_volume_mm3": 115465.8571697128,
+      "mass_g": 143.17766289044388,
+      "fixed_node_count": 530,
+      "loaded_node_count": 520,
+      "max_disp_mm": 0.023252569601392426,
+      "mean_loaded_disp_mm": 0.0196864164597619,
+      "max_von_mises_mpa": 0.32423562078537727,
+      "p95_von_mises_mpa": 0.13448334657097946,
+      "safety_factor_yield": 154.20884318289237,
+      "vtk_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results/official_upper_arm_static_fea.vtu"
+    },
+    {
+      "name": "v3",
+      "source": "<repo>/05_improved_design/upper_arm_v3/upper_arm_v3_ai_rebuild.stl",
+      "geometry_type": "gmsh_occ_parametric_no_small_mount_holes",
+      "scale_to_mm": 1.0,
+      "node_count": 1759,
+      "tet_count": 5620,
+      "span_axis": "x",
+      "bbox_extent_mm": "150.500,36.000,39.300",
+      "mesh_volume_mm3": 104561.16502828285,
+      "mass_g": 129.65584463507074,
+      "fixed_node_count": 196,
+      "loaded_node_count": 125,
+      "max_disp_mm": 0.06978172958309017,
+      "mean_loaded_disp_mm": 0.06417663433928596,
+      "max_von_mises_mpa": 0.5880817831044535,
+      "p95_von_mises_mpa": 0.35612196445585037,
+      "safety_factor_yield": 85.02218813181489,
+      "vtk_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results/v3_upper_arm_static_fea.vtu"
+    }
+  ]
+}

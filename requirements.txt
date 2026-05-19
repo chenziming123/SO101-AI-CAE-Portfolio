@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+trimesh
+pybullet
+gmsh
+meshio
+pyvista
+build123d
+ocp-vscode

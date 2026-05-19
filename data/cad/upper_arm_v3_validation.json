@@ -1,0 +1,98 @@
+{
+  "official_upper_arm": {
+    "path": "<repo>/00_source_snapshot/STL_SO101/Individual/Upper_arm_SO101.stl",
+    "vertices": 3961,
+    "faces": 8038,
+    "bbox_min": [
+      -65.085,
+      -0.0,
+      -35.6
+    ],
+    "bbox_max": [
+      77.0613,
+      24.5,
+      31.7
+    ],
+    "extents": [
+      142.1463,
+      24.5,
+      67.3
+    ],
+    "surface_area": 27902.95130477466,
+    "volume": 117328.19197700791,
+    "estimated_mass_g_pla": 145.4869580514898,
+    "watertight": true
+  },
+  "upper_arm_v1": {
+    "path": "<repo>/05_improved_design/upper_arm_v1/upper_arm_v1_ai_rebuild.stl",
+    "vertices": 2192,
+    "faces": 4412,
+    "bbox_min": [
+      -18.0,
+      -19.0,
+      -17.9998
+    ],
+    "bbox_max": [
+      132.5,
+      19.0,
+      21.3
+    ],
+    "extents": [
+      150.5,
+      38.0,
+      39.2998
+    ],
+    "surface_area": 27187.395819369827,
+    "volume": 93885.7052067053,
+    "estimated_mass_g_pla": 116.41827445631458,
+    "watertight": true
+  },
+  "upper_arm_v2": {
+    "path": "<repo>/05_improved_design/upper_arm_v2/upper_arm_v2_ai_rebuild.stl",
+    "vertices": 5692,
+    "faces": 11436,
+    "bbox_min": [
+      -18.0,
+      -18.0,
+      -17.9992
+    ],
+    "bbox_max": [
+      132.5,
+      18.0,
+      21.3
+    ],
+    "extents": [
+      150.5,
+      36.0,
+      39.2992
+    ],
+    "surface_area": 30189.978663853937,
+    "volume": 98626.09967715891,
+    "estimated_mass_g_pla": 122.29636359967705,
+    "watertight": true
+  },
+  "upper_arm_v3": {
+    "path": "<repo>/05_improved_design/upper_arm_v3/upper_arm_v3_ai_rebuild.stl",
+    "vertices": 5518,
+    "faces": 11088,
+    "bbox_min": [
+      -18.0,
+      -18.0,
+      -18.0
+    ],
+    "bbox_max": [
+      132.5,
+      18.0,
+      21.3
+    ],
+    "extents": [
+      150.5,
+      36.0,
+      39.3
+    ],
+    "surface_area": 30701.927296091744,
+    "volume": 101891.49757115943,
+    "estimated_mass_g_pla": 126.3454569882377,
+    "watertight": true
+  }
+}

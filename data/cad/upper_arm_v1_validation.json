@@ -1,0 +1,50 @@
+{
+  "official_upper_arm": {
+    "path": "<repo>/00_source_snapshot/STL_SO101/Individual/Upper_arm_SO101.stl",
+    "vertices": 3961,
+    "faces": 8038,
+    "bbox_min": [
+      -65.085,
+      -0.0,
+      -35.6
+    ],
+    "bbox_max": [
+      77.0613,
+      24.5,
+      31.7
+    ],
+    "extents": [
+      142.1463,
+      24.5,
+      67.3
+    ],
+    "surface_area": 27902.95130477466,
+    "volume": 117328.19197700791,
+    "estimated_mass_g_pla": 145.4869580514898,
+    "watertight": true
+  },
+  "improved_upper_arm_v1": {
+    "path": "<repo>/05_improved_design/upper_arm_v1/upper_arm_v1_ai_rebuild.stl",
+    "vertices": 2192,
+    "faces": 4412,
+    "bbox_min": [
+      -18.0,
+      -19.0,
+      -17.9998
+    ],
+    "bbox_max": [
+      132.5,
+      19.0,
+      21.3
+    ],
+    "extents": [
+      150.5,
+      38.0,
+      39.2998
+    ],
+    "surface_area": 27187.395819369827,
+    "volume": 93885.7052067053,
+    "estimated_mass_g_pla": 116.41827445631458,
+    "watertight": true
+  }
+}

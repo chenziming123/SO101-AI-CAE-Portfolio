@@ -1,0 +1,9 @@
+link,mass_kg,inertial_origin_xyz,visual_mesh_count,visual_meshes
+base_link,0.147,0.0137179 -5.19711e-05 0.0334843,4,assets/base_motor_holder_so101_v1.stl; assets/base_so101_v2.stl; assets/sts3215_03a_v1.stl; assets/waveshare_mounting_plate_so101_v2.stl
+shoulder_link,0.100006,-0.0307604 -1.66727e-05 -0.0252713,3,assets/sts3215_03a_v1.stl; assets/motor_holder_so101_base_v1.stl; assets/rotation_pitch_so101_v1.stl
+upper_arm_link,0.103,-0.0898471 -0.00838224 0.0184089,2,assets/sts3215_03a_v1.stl; assets/upper_arm_so101_v1.stl
+lower_arm_link,0.104,-0.0980701 0.00324376 0.0182831,3,assets/under_arm_so101_v1.stl; assets/motor_holder_so101_wrist_v1.stl; assets/sts3215_03a_v1.stl
+wrist_link,0.079,-0.000103312 -0.0386143 0.0281156,2,assets/sts3215_03a_no_horn_v1.stl; assets/wrist_roll_pitch_so101_v2.stl
+gripper_link,0.087,0.000213627 0.000245138 -0.025187,2,assets/sts3215_03a_v1.stl; assets/wrist_roll_follower_so101_v1.stl
+gripper_frame_link,1e-09,0 0 0,0,
+moving_jaw_so101_v1_link,0.012,-0.00157495 -0.0300244 0.0192755,1,assets/moving_jaw_so101_v1.stl

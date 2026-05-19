@@ -1,0 +1,63 @@
+{
+  "material": {
+    "name": "PLA screening",
+    "young_mpa": 2500.0,
+    "poisson": 0.35,
+    "yield_mpa": 50.0,
+    "density_g_per_cm3": 1.24
+  },
+  "loadcase": {
+    "total_force_n": 10.0,
+    "direction": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "min_interface_band_mm": 2.0,
+    "max_interface_band_mm": 10.0,
+    "min_boundary_nodes": 24,
+    "description": "Fix/load narrow end-interface patches instead of broad longitudinal bands"
+  },
+  "results": [
+    {
+      "name": "official",
+      "mesh_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results/tmp/official_upper_arm_tet.msh",
+      "node_count": 2845,
+      "tet_count": 8943,
+      "span_axis": "x",
+      "bbox_extent_mm": "142.170,24.500,67.300",
+      "mesh_volume_mm3": 115465.8571697128,
+      "mass_g": 143.17766289044388,
+      "fixed_node_count": 102,
+      "loaded_node_count": 27,
+      "fixed_band_mm": 2.0,
+      "loaded_band_mm": 3.0,
+      "max_disp_mm": 0.033667817555447996,
+      "mean_loaded_disp_mm": 0.03224589031975206,
+      "max_von_mises_mpa": 0.7256586008429834,
+      "p95_von_mises_mpa": 0.1873534339243233,
+      "safety_factor_yield": 68.90292479399538,
+      "vtk_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_interface_boundary/official_upper_arm_interface_fea.vtu"
+    },
+    {
+      "name": "v3",
+      "mesh_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results/tmp/v3_upper_arm_tet.msh",
+      "node_count": 1759,
+      "tet_count": 5620,
+      "span_axis": "x",
+      "bbox_extent_mm": "150.500,36.000,39.300",
+      "mesh_volume_mm3": 104561.16502828285,
+      "mass_g": 129.65584463507074,
+      "fixed_node_count": 56,
+      "loaded_node_count": 25,
+      "fixed_band_mm": 2.0,
+      "loaded_band_mm": 4.0,
+      "max_disp_mm": 0.08695366862654645,
+      "mean_loaded_disp_mm": 0.08592990795073771,
+      "max_von_mises_mpa": 0.6361192346526321,
+      "p95_von_mises_mpa": 0.38133527581794424,
+      "safety_factor_yield": 78.60161629494458,
+      "vtk_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_interface_boundary/v3_upper_arm_interface_fea.vtu"
+    }
+  ]
+}

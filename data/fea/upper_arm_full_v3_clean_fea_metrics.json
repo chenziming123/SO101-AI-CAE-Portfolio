@@ -1,0 +1,63 @@
+{
+  "material": {
+    "name": "PLA screening",
+    "young_mpa": 2500.0,
+    "poisson": 0.35,
+    "yield_mpa": 50.0,
+    "density_g_per_cm3": 1.24
+  },
+  "loadcase": {
+    "total_force_n": 10.0,
+    "direction": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "fixed_x_fraction": 0.12,
+    "loaded_x_fraction": 0.1,
+    "mesh_size_mm": 5.0
+  },
+  "mesh_resolution_note": "5 mm target mesh is required to include V3 small mounting holes and counterbores without overlapping boundary facets.",
+  "results": [
+    {
+      "name": "official",
+      "source": "<repo>/00_source_snapshot/STEP_SO101/Upper_arm_SO101.step",
+      "geometry_type": "step_refined_5mm",
+      "mesh_size_mm": 5.0,
+      "node_count": 3750,
+      "tet_count": 12410,
+      "span_axis": "x",
+      "bbox_extent_mm": "142.170,24.500,67.300",
+      "mesh_volume_mm3": 116184.94530315467,
+      "mass_g": 144.0693321759118,
+      "fixed_node_count": 679,
+      "loaded_node_count": 569,
+      "max_disp_mm": 0.024591072537046895,
+      "mean_loaded_disp_mm": 0.02061376735056249,
+      "max_von_mises_mpa": 0.32656449423703104,
+      "p95_von_mises_mpa": 0.13982313609067548,
+      "safety_factor_yield": 153.1091128471192,
+      "vtk_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_full_v3_clean/official_upper_arm_full_v3_clean_fea.vtu"
+    },
+    {
+      "name": "v3_full",
+      "source": "<repo>/07_fea_analysis/upper_arm_static_fea/results_full_v3_clean/v3_full_cae_clean_5mm.step",
+      "geometry_type": "full_v3_cae_clean_5mm",
+      "mesh_size_mm": 5.0,
+      "node_count": 3255,
+      "tet_count": 11048,
+      "span_axis": "x",
+      "bbox_extent_mm": "150.500,36.000,39.300",
+      "mesh_volume_mm3": 102812.16022537244,
+      "mass_g": 127.48707867946182,
+      "fixed_node_count": 491,
+      "loaded_node_count": 213,
+      "max_disp_mm": 0.0715767356912598,
+      "mean_loaded_disp_mm": 0.0660701189626807,
+      "max_von_mises_mpa": 0.7697452725935843,
+      "p95_von_mises_mpa": 0.3354913242551402,
+      "safety_factor_yield": 64.95655352520673,
+      "vtk_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_full_v3_clean/v3_full_upper_arm_full_v3_clean_fea.vtu"
+    }
+  ]
+}

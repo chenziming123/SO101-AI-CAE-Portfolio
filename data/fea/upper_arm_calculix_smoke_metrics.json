@@ -1,0 +1,62 @@
+{
+  "material": {
+    "name": "PLA screening",
+    "young_mpa": 2500.0,
+    "poisson": 0.35,
+    "yield_mpa": 50.0,
+    "density_g_per_cm3": 1.24
+  },
+  "purpose": "CalculiX solver-chain smoke test",
+  "results": [
+    {
+      "name": "official",
+      "mesh_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_full_v3_clean/tmp/official_upper_arm_clean_5mm.msh",
+      "job_name": "official_upper_arm_ccx_smoke",
+      "node_count": 3750,
+      "tet_count": 12410,
+      "fixed_node_count": 679,
+      "loaded_node_count": 569,
+      "total_force_n": 10.0,
+      "per_loaded_node_force_n": 0.01757469244288225,
+      "ccx_returncode": 0,
+      "ccx_status": "PASS",
+      "inp_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/official/official_upper_arm_ccx_smoke.inp",
+      "dat_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/official/official_upper_arm_ccx_smoke.dat",
+      "frd_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/official/official_upper_arm_ccx_smoke.frd",
+      "sta_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/official/official_upper_arm_ccx_smoke.sta",
+      "log_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/official/official_upper_arm_ccx_smoke_ccx.log",
+      "dat_size_bytes": 2487588,
+      "frd_size_bytes": 1702805,
+      "max_loaded_disp_mm": 0.024591077255072417,
+      "mean_loaded_disp_mm": 0.020613767413315175,
+      "max_von_mises_mpa": 0.32656446375531173,
+      "p95_von_mises_mpa": 0.13985429540951438,
+      "safety_factor_yield": 153.10912713841395
+    },
+    {
+      "name": "v3_full",
+      "mesh_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_full_v3_clean/tmp/v3_full_upper_arm_clean_5mm.msh",
+      "job_name": "v3_full_upper_arm_ccx_smoke",
+      "node_count": 3255,
+      "tet_count": 11048,
+      "fixed_node_count": 491,
+      "loaded_node_count": 213,
+      "total_force_n": 10.0,
+      "per_loaded_node_force_n": 0.046948356807511735,
+      "ccx_returncode": 0,
+      "ccx_status": "PASS",
+      "inp_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/v3_full/v3_full_upper_arm_ccx_smoke.inp",
+      "dat_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/v3_full/v3_full_upper_arm_ccx_smoke.dat",
+      "frd_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/v3_full/v3_full_upper_arm_ccx_smoke.frd",
+      "sta_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/v3_full/v3_full_upper_arm_ccx_smoke.sta",
+      "log_path": "<repo>/07_fea_analysis/upper_arm_static_fea/results_calculix_smoke/v3_full/v3_full_upper_arm_ccx_smoke_ccx.log",
+      "dat_size_bytes": 2199044,
+      "frd_size_bytes": 1498439,
+      "max_loaded_disp_mm": 0.07157673147645988,
+      "mean_loaded_disp_mm": 0.06607011895755466,
+      "max_von_mises_mpa": 0.7697452884997265,
+      "p95_von_mises_mpa": 0.335540378569691,
+      "safety_factor_yield": 64.9565521829339
+    }
+  ]
+}
